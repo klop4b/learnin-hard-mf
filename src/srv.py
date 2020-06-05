@@ -20,7 +20,7 @@ class MyHandler(SimpleHTTPRequestHandler):
             born = 'You were born in ' + str(year) + ' year'
 
             msg = f"""
-                            Hello {name}!"
+                            Hello {name}!
                             {born}
                             Your path: {path}
                         """
@@ -38,7 +38,7 @@ class MyHandler(SimpleHTTPRequestHandler):
 
 
             msg = f"""
-                                        Hello {name}!"
+                                        Hello {name}!
                                         Your path: {path}
                                     """
 
@@ -48,7 +48,7 @@ class MyHandler(SimpleHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(msg.encode())
 
-        elif self.path.startswith("/hello") and self.path.find('name') == -1 and self.path.find('age') == -1:
+        elif self.path.endswith("/hello") or self.path.endswith("/hello/"):
             path = self.path.split("?")
 
 
