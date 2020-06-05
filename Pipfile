@@ -5,10 +5,10 @@ verify_ssl = true
 
 [dev-packages]
 ipython = "*"
-v = {editable = true,version = "*"}
+httpie = "*"
 
 [packages]
-httpie = "*"
+django = "*"
 
 [requires]
 python_version = "3.8"
