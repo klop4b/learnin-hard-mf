@@ -52,6 +52,7 @@ class MyHandler(SimpleHTTPRequestHandler):
             path = self.path.split("?")
 
 
+
             msg = f"""
                                                    Hello Anonymous!
                                                    Your path: {path}
