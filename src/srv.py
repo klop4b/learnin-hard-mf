@@ -24,7 +24,6 @@ class MyHandler(SimpleHTTPRequestHandler):
                             {born}
                             Your path: {path}
                         """
-            print(msg)
 
             self.send_response(200)
             self.send_header("Content-type", "text/plain")
@@ -42,7 +41,6 @@ class MyHandler(SimpleHTTPRequestHandler):
                                         Hello {name}!"
                                         Your path: {path}
                                     """
-            print(msg)
 
             self.send_response(200)
             self.send_header("Content-type", "text/plain")
@@ -58,7 +56,6 @@ class MyHandler(SimpleHTTPRequestHandler):
                                                    Hello Anonymous!
                                                    Your path: {path}
                                                """
-            print(msg)
 
             self.send_response(200)
             self.send_header("Content-type", "text/plain")
