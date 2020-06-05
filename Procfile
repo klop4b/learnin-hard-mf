@@ -1,2 +1,1 @@
-web: python src/srv.py
-heroku ps:scale web=1
+web: python srv.py
