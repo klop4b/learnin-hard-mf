@@ -9,6 +9,7 @@ v = {editable = true,version = "*"}
 httppie = "*"
 
 [packages]
+httppie = "*"
 
 [requires]
 python_version = "3.8"
